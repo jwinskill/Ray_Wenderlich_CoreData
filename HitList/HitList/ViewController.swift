@@ -85,7 +85,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // 1. Get a reference to appDelegate's Managed Object Context
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         let managedContext = appDelegate.managedObjectContext
-        
+
         // 2. Create a new managed object and insert it into the Managed Object Context
         let entity = NSEntityDescription.entityForName("Person", inManagedObjectContext: managedContext!)
         let person = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
